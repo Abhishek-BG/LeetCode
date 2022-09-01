@@ -56,6 +56,7 @@ class Solution {
 
         int n = heights.length, m = heights[0].length;
 
+        // td array to store the data
         boolean[][] pacific = new boolean[n][m];
         boolean[][] atlantic = new boolean[n][m];
 
@@ -72,7 +73,6 @@ class Solution {
             for (int j = 0; j < m; j++) {
                 if (pacific[i][j] && atlantic[i][j]) {
                     res.add(List.of(i, j));
-
                 }
             }
         }
